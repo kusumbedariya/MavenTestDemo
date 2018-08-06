@@ -8,7 +8,6 @@ public class HomePage {
   WebDriver driver;
   String url = "https://www.google.com/";
   String title = "Google";
-  String title1= "Google";
 
   public HomePage(WebDriver driver) {
     this.driver = driver;
@@ -21,10 +20,6 @@ public class HomePage {
   public Boolean isTitleCorrect() {
     return driver.getTitle().equals(title);
   }
-  
-  public Boolean isTitleCorrect1() {
-	    return driver.getTitle().equals(title1);
-	  }
 
   
 }
