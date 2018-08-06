@@ -21,10 +21,5 @@ public class HomePage {
     return driver.getTitle().equals(title);
   }
   
-  public static void main(String[] args){
-	  System.setProperty("webdriver.chrome.driver", "C:\\JAVASE8Workspace\\chromedriver_win32 (1)\\chromedriver.exe");
-	  //WebDriver driver = new ChromeDriver();
-
-  }
 
 }
