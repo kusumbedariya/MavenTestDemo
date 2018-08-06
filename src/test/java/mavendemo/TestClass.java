@@ -14,7 +14,7 @@ public class TestClass {
   
   @Before
   public void setUp() {
-	  System.setProperty("webdriver.chrome.driver", "C:\\JAVASE8Workspace\\chromedriver_win32 (1)\\chromedriver.exe");
+	 // System.setProperty("webdriver.chrome.driver", "C:\\JAVASE8Workspace\\chromedriver_win32 (1)\\chromedriver.exe");
 	  driver = new ChromeDriver();
   }
 
