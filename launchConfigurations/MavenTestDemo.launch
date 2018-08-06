@@ -1,0 +1,17 @@
+{
+  "ServiceId": "com.ibm.cloudoe.orion.client.deploy",
+  "Params": {
+    "Target": {
+      "Url": "https://api.eu-de.bluemix.net",
+      "Org": "kusum111@in.ibm.com",
+      "Space": "dev"
+    },
+    "Name": "MavenTestDemo",
+    "Instrumentation": {
+      "domain": "eu-de.mybluemix.net",
+      "instances": "1"
+    }
+  },
+  "Path": "manifest.yml",
+  "Type": "Cloud Foundry"
+}
