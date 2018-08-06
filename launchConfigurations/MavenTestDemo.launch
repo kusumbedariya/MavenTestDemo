@@ -12,6 +12,6 @@
       "instances": "1"
     }
   },
-  "Path": "manifest.yml",
+  "Path": "",
   "Type": "Cloud Foundry"
 }

@@ -21,5 +21,8 @@ public class HomePage {
     return driver.getTitle().equals(title);
   }
 
+ public static void main(String[] args){
+	  System.out.println("This is MavenTestDemo Project");
+ }
   
 }

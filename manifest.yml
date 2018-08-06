@@ -1,0 +1,6 @@
+---
+applications:
+- name: MavenTestDemo
+  random-route: true
+  memory: 256M
+  path: target/MavenTestDemo.war
