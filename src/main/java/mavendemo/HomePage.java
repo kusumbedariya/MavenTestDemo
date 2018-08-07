@@ -10,7 +10,7 @@ public class HomePage {
   String title = "Google";
 
   public HomePage(WebDriver driver) {
-    this.driver = driver
+    this.driver = driver;
  System.out.println(driver);  
   	
   }
