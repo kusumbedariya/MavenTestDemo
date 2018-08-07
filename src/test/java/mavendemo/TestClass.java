@@ -20,7 +20,7 @@ public class TestClass {
   	        WebDriverManager.chromedriver().setup();
 	 // System.setProperty("webdriver.chrome.driver", "C:\\JAVASE8Workspace\\chromedriver_win32 (1)\\chromedriver.exe");
 //	  ChromeDriverManager.getInstance().setup();
-	  driver = new ChromeDriver();
+	 this.driver = new ChromeDriver();
   }
 
   @After
