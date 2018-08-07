@@ -10,28 +10,33 @@ public class TestClass {
 
   WebDriver driver;
  
-// @BeforeClass
-//  public static void setupClass() {
-//
-//  }
+ @BeforeClass
+  public static void setupClass() 
+  {
+		System.out.println("@BeforeClass - SetupClass()");
+	   WebDriverManager.chromedriver().setup();
+  }
     
   @Before
   public void setUp() {
-  	        WebDriverManager.chromedriver().setup();
+	System.out.println("@Before - setUp()");
 	 // System.setProperty("webdriver.chrome.driver", "C:\\JAVASE8Workspace\\chromedriver_win32 (1)\\chromedriver.exe");
-//	  ChromeDriverManager.getInstance().setup();
+// ChromeDriverManager.getInstance().setup();
 	 this.driver = new ChromeDriver();
   }
 
   @After
   public void tearDown() {
-    driver.quit();
+  	System.out.println("@After - tearDown()");
+  	System.out.println("Driver - tear down : "+driver);
+    //driver.quit();
   }
 
   @Test
   public void testScript() {
+ System.out.println("@Test - testScript");
     HomePage homePage = new HomePage(driver);
-    homePage.open();
+ 	homePage.open();
     assertTrue(homePage.isTitleCorrect());
   }
   

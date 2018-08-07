@@ -10,15 +10,21 @@ public class HomePage {
   String title = "Google";
 
   public HomePage(WebDriver driver) {
-    this.driver = driver;
+    this.driver = driver
+ System.out.println(driver);  
+  	
   }
 
   public void open()  {
-    driver.get(url);
+//    driver.get(url);
+    System.out.println("---Open Method()");
   }
 
-  public Boolean isTitleCorrect() {
-    return driver.getTitle().equals(title);
+  public Boolean isTitleCorrect() 
+  {
+  	System.out.println("---isTitleCorrect()---"+driver.getTitle().equals(title));
+  	
+  return driver.getTitle().equals(title);
   }
 
  public static void main(String[] args){
