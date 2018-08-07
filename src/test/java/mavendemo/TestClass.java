@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestClass {
 
-  WebDriver driver=null;
+  WebDriver driver;
  
 // @BeforeClass
 //  public static void setupClass() {
