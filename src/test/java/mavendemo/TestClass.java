@@ -10,13 +10,14 @@ public class TestClass {
 
   WebDriver driver=null;
  
- @BeforeClass
-  public static void setupClass() {
-        WebDriverManager.chromedriver().setup();
-  }
+// @BeforeClass
+//  public static void setupClass() {
+//
+//  }
     
   @Before
   public void setUp() {
+  	        WebDriverManager.chromedriver().setup();
 	 // System.setProperty("webdriver.chrome.driver", "C:\\JAVASE8Workspace\\chromedriver_win32 (1)\\chromedriver.exe");
 //	  ChromeDriverManager.getInstance().setup();
 	  driver = new ChromeDriver();
