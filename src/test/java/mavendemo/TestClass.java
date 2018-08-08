@@ -1,7 +1,6 @@
 package mavendemo;
 
 import static org.junit.Assert.*;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -30,11 +29,11 @@ public class TestClass {
 	 // System.setProperty("webdriver.chrome.driver", "C:\\JAVASE8Workspace\\chromedriver_win32 (1)\\chromedriver.exe");
 	// ChromeDriverManager.getInstance().setup();
 	    DesiredCapabilities caps = DesiredCapabilities.chrome();
-	    caps.setCapability("platform", "Windows 10");
+	 caps.setCapability("platform", "Windows 10");
 	    caps.setCapability("version", "latest");
 	 
 	    WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
-
+	 System.out.println("driver is "+driver);
 	//driver = new ChromeDriver();
   }
 
