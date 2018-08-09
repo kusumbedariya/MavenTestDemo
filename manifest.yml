@@ -6,4 +6,4 @@ applications:
   path: target/MavenTestDemo.war
  env:    
     IBM_LIBERTY_LICENSE: L-MCAO-9SYMVC    
-    JVM: openjdk  
+    JVM: openjdk
