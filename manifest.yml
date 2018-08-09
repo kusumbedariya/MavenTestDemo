@@ -4,3 +4,6 @@ applications:
   random-route: true
   memory: 256M
   path: target/MavenTestDemo.war
+  env:    
+        IBM_LIBERTY_LICENSE: L-MCAO-9SYMVC    
+        JVM: openjdk
