@@ -49,7 +49,9 @@ public class TestClass {
  System.out.println("@Test - testScript");
 //    HomePage homePage = new HomePage(driver);
 // 	homePage.open();
-//    assertTrue(homePage.isTitleCorrect());
+  String test="Kusum";
+  assertEquals("Kusum", test);
+
   }
   
 
