@@ -15,8 +15,8 @@ public class TestClass {
   public static final String ACCESS_KEY = "bb1f0c41-cae7-435d-849f-7b9658979977";
   public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
  
- //RemoteWebDriver driver;
- WebDriver driver;
+ RemoteWebDriver driver;
+ //WebDriver driver;
    
  @BeforeClass
   public static void setupClass() throws Exception 
