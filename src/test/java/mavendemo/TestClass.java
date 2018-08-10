@@ -33,8 +33,8 @@ public class TestClass {
 //	 ChromeOptions options = new ChromeOptions();
 //	 options.addArguments("--lang=en");
 //	 caps.setCapability(ChromeOptions.CAPABILITY, options);
-	  caps.setPlatform(Platform.WINDOWS);
-	  caps.setVersion("latest");
+	  caps.setCapability("platform", "WINDOWS");
+	  caps.setCapability("version", "latest");
 	 caps.setCapability("extendedDebugging", "true");
 //	 WebDriver driver = new ChromeDriver(options)
 
