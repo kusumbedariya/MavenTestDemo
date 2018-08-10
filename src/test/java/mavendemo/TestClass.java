@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.*;
 import java.net.URL;
 
@@ -29,11 +30,16 @@ public class TestClass {
 	System.out.println("@Before - setUp()");
 	 // System.setProperty("webdriver.chrome.driver", "C:\\JAVASE8Workspace\\chromedriver_win32 (1)\\chromedriver.exe");
 	// ChromeDriverManager.getInstance().setup();
-	    DesiredCapabilities caps = DesiredCapabilities.chrome();
-	    caps.setCapability("platform", "Windows 7");
-	    caps.setCapability("version", "latest");
+	 DesiredCapabilities caps = DesiredCapabilities.chrome(); 
+	 ChromeOptions options = new ChromeOptions();
+	 options.addArguments("--lang=en");
+	 caps.setCapability(ChromeOptions.CAPABILITY, options);
+	 caps.setCapability("platform", "Windows 7");
+	 caps.setCapability("version", "latest");
+//	 WebDriver driver = new ChromeDriver(options)
+
+     driver = new RemoteWebDriver(new URL(URL), caps);
 	 
-	 driver = new RemoteWebDriver(new URL(URL), caps);
 	 System.out.println("driver is "+driver);
 	//driver = new ChromeDriver();
   }
