@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.*;
 import java.net.URL;
 
@@ -38,7 +39,8 @@ public class TestClass {
 	 caps.setCapability("extendedDebugging", "true");
 //	 WebDriver driver = new ChromeDriver(options)
 
- 	 driver = new RemoteWebDriver(new URL(URL), caps);
+// 	 driver = new RemoteWebDriver(new URL(URL), caps);
+ 	 driver = new RemoteWebDriver(caps);
 	 
 	 System.out.println("driver is "+driver);
 	//driver = new ChromeDriver();
