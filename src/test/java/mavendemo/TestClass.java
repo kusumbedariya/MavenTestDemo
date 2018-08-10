@@ -36,9 +36,10 @@ public class TestClass {
 //	 caps.setCapability(ChromeOptions.CAPABILITY, options);
 	 caps.setCapability("platform", "Windows 7");
 	 caps.setCapability("version", "latest");
+	 caps.setCapability("extendedDebugging", "true");
 //	 WebDriver driver = new ChromeDriver(options)
 
-     driver = new RemoteWebDriver(new URL(URL), caps);
+ 	 driver = new RemoteWebDriver(new URL(URL), caps);
 	 
 	 System.out.println("driver is "+driver);
 	//driver = new ChromeDriver();
