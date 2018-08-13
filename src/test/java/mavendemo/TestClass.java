@@ -43,8 +43,8 @@ public class TestClass {
 	 caps.setCapability("extendedDebugging", "true");
 //	 WebDriver driver = new ChromeDriver(options)
 
- 	 driver = new RemoteWebDriver(new URL(URL), caps);
-// 	 driver = new RemoteWebDriver(caps);	 
+// 	 driver = new RemoteWebDriver(new URL(URL), caps);
+ 	 driver = new RemoteWebDriver(caps);	 
 	 System.out.println("driver is "+driver);
 	//driver = new ChromeDriver();
   }
