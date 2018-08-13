@@ -37,7 +37,7 @@ public class TestClass {
 //	 options.addArguments("--lang=en");
 //	 caps.setCapability(ChromeOptions.CAPABILITY, options);
 	caps.setPlatform(Platform.LINUX);
-	capability.setVersion("65");
+	caps.setVersion("65");
 //	  caps.setCapability("platform", "WINDOWS");
 //	  caps.setCapability("version", "latest");
 	 caps.setCapability("extendedDebugging", "true");
