@@ -10,10 +10,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class TestClass1 {
+public class SampleSauceTest {
 	WebDriver driver;
 
-	  public static final String USERNAME = "kusumbedariya";
+	 public static final String USERNAME = "kusumbedariya";
 	  public static final String ACCESS_KEY = "bb1f0c41-cae7-435d-849f-7b9658979977";
 	  public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
 	  
@@ -34,7 +34,7 @@ public class TestClass1 {
 		driver.get("https://saucelabs.com/test/guinea-pig");
 		System.out.println("title of page is: " + driver.getTitle());
 	    String test="Kusum";
-	    assertEquals("Kusum", test);
+	 	assertEquals("Kusum", test);
 	    driver.quit();
 		System.out.println("-- testScript() END --");
 	  }
