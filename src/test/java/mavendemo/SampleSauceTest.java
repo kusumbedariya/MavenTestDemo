@@ -22,7 +22,7 @@ public class SampleSauceTest {
 		System.out.println("-- Setup() BEGIN --");
 		DesiredCapabilities caps = DesiredCapabilities.firefox();
 		caps.setCapability("platform", "LINUX");
-		caps.setCapability("version", "48.0");
+		caps.setCapability("version", "54.0");
 		driver = new RemoteWebDriver(new URL(URL), caps);
 		System.out.println("Driver is : "+driver);
 		System.out.println("-- Setup() END --");
@@ -33,7 +33,7 @@ public class SampleSauceTest {
 		System.out.println("-- testScript() BEGIN --");
 		driver.get("https://saucelabs.com/test/guinea-pig");
 		System.out.println("title of page is: " + driver.getTitle());
-	    String test="Kusum";
+	 	String test="Kusum";
 	 	assertEquals("Kusum", test);
 	    driver.quit();
 		System.out.println("-- testScript() END --");
