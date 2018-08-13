@@ -44,8 +44,8 @@ public class TestClass {
 //	 WebDriver driver = new ChromeDriver(options)
 
 // 	 driver = new RemoteWebDriver(new URL(URL), caps);
-// 	 driver = new RemoteWebDriver(caps);	 
-	 driver = new ChromeDriver(caps);
+ 	 driver = new RemoteWebDriver(caps);	 
+//	 driver = new ChromeDriver(caps);
 	 System.out.println("driver is "+driver);
 	 driver.get(new URL(URL));
 	 System.out.println("title of page is: " + driver.getTitle());
