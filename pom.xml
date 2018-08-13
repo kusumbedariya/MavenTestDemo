@@ -6,33 +6,42 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>MavenTestingDemoProject</name>
 	<dependencies>
-
+	
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
-
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.13.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-remote-driver</artifactId>
+			<version>3.13.0</version>
+		</dependency>
+<!--
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>2.53.0</version>
 		</dependency>
-<!--	-->	
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-chrome-driver</artifactId>
 			<version>2.25.0</version>
 		</dependency> 
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver
+		 https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver
 		<dependency>
 		    <groupId>org.seleniumhq.selenium</groupId>
 		    <artifactId>selenium-firefox-driver</artifactId>
 		    <version>2.0rc3</version>
 		</dependency> -->
 
-		
+		<!--
 		<dependency>
 		    <groupId>org.seleniumhq.selenium</groupId>
 		    <artifactId>selenium-remote-driver</artifactId>
@@ -47,14 +56,14 @@
 		    <version>2.1.24</version>
 
 		</dependency>
-		<!--<dependency>
+		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
 			<version>2.2.4</version>
 			<scope>test</scope>
-		</dependency>
+		</dependency>-->
 				
-		-->
+		
 
 	</dependencies>
 	<!--<properties> 
