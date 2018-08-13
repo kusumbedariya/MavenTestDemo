@@ -7,7 +7,7 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.*;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;
 
 public class TestClass {
@@ -32,22 +32,22 @@ public class TestClass {
 	System.out.println("@Before - setUp()");
 	 // System.setProperty("webdriver.chrome.driver", "C:\\JAVASE8Workspace\\chromedriver_win32 (1)\\chromedriver.exe");
 	// ChromeDriverManager.getInstance().setup();
-	 DesiredCapabilities caps = DesiredCapabilities.chrome(); 
+	 DesiredCapabilities caps = DesiredCapabilities.firefox(); 
 //	 ChromeOptions options = new ChromeOptions();
 //	 options.addArguments("--lang=en");
 //	 caps.setCapability(ChromeOptions.CAPABILITY, options);
 	caps.setPlatform(Platform.LINUX);
 //	caps.setVersion("65");
 //	  caps.setCapability("platform", "WINDOWS");
-	  caps.setCapability("version", "latest");
+	  caps.setCapability("version", "45.2.0");
 //	 caps.setCapability("extendedDebugging", "true");
 //	 WebDriver driver = new ChromeDriver(options)
 
-// 	 driver = new RemoteWebDriver(new URL(URL), caps);
- 	 driver = new RemoteWebDriver(caps);	 
+ 	 driver = new RemoteWebDriver(new URL(URL), caps);
+// 	 driver = new RemoteWebDriver(caps);	 
 //	 driver = new ChromeDriver(caps);
 	 System.out.println("driver is "+driver);
-	 driver.get(new URL(URL));
+//	 driver.get(new URL(URL));
 	 System.out.println("title of page is: " + driver.getTitle());
   }
 
