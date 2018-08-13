@@ -37,16 +37,18 @@ public class TestClass {
 //	 options.addArguments("--lang=en");
 //	 caps.setCapability(ChromeOptions.CAPABILITY, options);
 	caps.setPlatform(Platform.LINUX);
-	caps.setVersion("65");
+//	caps.setVersion("65");
 //	  caps.setCapability("platform", "WINDOWS");
-//	  caps.setCapability("version", "latest");
-	 caps.setCapability("extendedDebugging", "true");
+	  caps.setCapability("version", "latest");
+//	 caps.setCapability("extendedDebugging", "true");
 //	 WebDriver driver = new ChromeDriver(options)
 
 // 	 driver = new RemoteWebDriver(new URL(URL), caps);
- 	 driver = new RemoteWebDriver(caps);	 
+// 	 driver = new RemoteWebDriver(caps);	 
+	 driver = new ChromeDriver(caps);
 	 System.out.println("driver is "+driver);
-	//driver = new ChromeDriver();
+	 driver.get(new URL(URL));
+	 System.out.println("title of page is: " + driver.getTitle());
   }
 
   @After
