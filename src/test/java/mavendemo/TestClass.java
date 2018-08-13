@@ -32,14 +32,14 @@ public class TestClass {
 	System.out.println("@Before - setUp()");
 	 // System.setProperty("webdriver.chrome.driver", "C:\\JAVASE8Workspace\\chromedriver_win32 (1)\\chromedriver.exe");
 	// ChromeDriverManager.getInstance().setup();
-	 DesiredCapabilities caps = DesiredCapabilities.firefox(); 
+	 DesiredCapabilities caps = DesiredCapabilities.chrome(); 
 //	 ChromeOptions options = new ChromeOptions();
 //	 options.addArguments("--lang=en");
 //	 caps.setCapability(ChromeOptions.CAPABILITY, options);
 	caps.setPlatform(Platform.LINUX);
 //	caps.setVersion("65");
 //	  caps.setCapability("platform", "WINDOWS");
-	  caps.setCapability("version", "45.2.0");
+	  caps.setCapability("version", "54.0.0");
 //	 caps.setCapability("extendedDebugging", "true");
 //	 WebDriver driver = new ChromeDriver(options)
 
