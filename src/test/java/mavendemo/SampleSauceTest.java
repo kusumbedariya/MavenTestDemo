@@ -23,6 +23,7 @@ public class SampleSauceTest {
 		DesiredCapabilities caps = DesiredCapabilities.firefox();
 		caps.setCapability("platform", "LINUX");
 		caps.setCapability("version", "latest");
+		caps.setCapability("name", "SampleSauceTest");
 		driver = new RemoteWebDriver(new URL(URL), caps);
 		System.out.println("Driver is : "+driver);
 		System.out.println("-- Setup() END --");

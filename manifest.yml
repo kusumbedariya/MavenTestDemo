@@ -7,4 +7,6 @@ applications:
  env:    
  	IBM_LIBERTY_LICENSE: L-MCAO-9SYMVC 
     IBM_JAVA_LICENSE: Z125-5589-05
+    JBP_CONFIG_IBMJDK : 
+    		version: 1.8.+
     
