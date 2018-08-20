@@ -13,8 +13,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class SampleSauceTest {
 	WebDriver driver;
 
-	 public static final String USERNAME = "kusumbedariya";
-	  public static final String ACCESS_KEY = "bb1f0c41-cae7-435d-849f-7b9658979977";
+	 public static final String USERNAME = "kusum2560";
+	  public static final String ACCESS_KEY = "85204798-74de-474a-840c-b79174e5499e";
 	  public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
 	  
 	  @Before
@@ -33,9 +33,8 @@ public class SampleSauceTest {
 	  public void testScript() {
 		System.out.println("-- testScript() BEGIN --");
 		driver.get("https://saucelabs.com/test/guinea-pig");
-		System.out.println("title of page is: " + driver.getTitle());
-	 	String test="Kusum";
-	 	assertEquals("Kusum", test);
+		System.out.println("title of page is: " + driver.getTitle());	 	
+	 	assertEquals("I am a page title - Sauce Labs", driver.getTitle());
 	    driver.quit();
 		System.out.println("-- testScript() END --");
 	  }
